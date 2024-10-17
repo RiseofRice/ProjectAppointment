@@ -1,0 +1,151 @@
+/* Grundlegendes Styling */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #729efd;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+.login form {
+    display: flex;
+    align-items: center;
+}
+
+.input-rounded {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.btn-rounded {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #729efd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-rounded:hover {
+    background-color: #729efd;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #729efd;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+}
+
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    width: 30%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #777;
+}

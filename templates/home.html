@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectAppointment</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header mit Login -->
+    <header>
+        <div class="container">
+            <h1>ProjectAppointment</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <form action="/login" method="POST">
+                    <input type="text" placeholder="Benutzername" name="username" class="input-rounded">
+                    <input type="password" placeholder="Passwort" name="password" class="input-rounded">
+                    <button type="submit" class="btn-rounded">Login</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Planer für DND</h2>
+            <p>Einfache und schnelle Terminfindung <br>Keine Diskussionen mehr, weniger Stress für Alex. <br> Mehr DND</p>
+            <form action="/register">
+                <input type="submit" class="btn-primary" value="Los geht's">
+            </form>
+            
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h3>Warum ProjectAppointment?</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h4>Weil Alex sonst Burnout hat</h4>
+                    <p>Nehme Alex die Aufgabe alle dazu zu bringen ein Termin zu suchen</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Einfach und intuitiv</h4>
+                    <p>Paar klicks und alle Termine sind eingetragen.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Was soll ich hier hinschreiben?</h4>
+                    <p>Keine Ahnung!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 ProjectAppointment. Für dich und deine Freunde entwickelt.</p>
+        </div>
+    </footer>
+</body>
+</html>
