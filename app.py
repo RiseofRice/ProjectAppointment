@@ -4,6 +4,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def home() -> str:
+    """
+Route for the home page.
+
+Returns:
+    str: A greeting message 'Hello World'.
+"""
     return 'Hello World'
 
 @app.route('/register')
