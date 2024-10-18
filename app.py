@@ -14,6 +14,12 @@ Returns:
 
 @app.route('/register')
 def register() -> str:
+    """
+    Handles the registration process.
+    Returns:
+        str: A confirmation message indicating the registration status.
+    """
+
     return 'Register'
 
 @app.route('/login')
