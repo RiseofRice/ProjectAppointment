@@ -149,3 +149,34 @@ footer p {
     margin: 0;
     color: #777;
 }
+
+/* Registration Form Section */
+.registration-form {
+    background-color: #f0f4f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.registration-form h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.registration-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.registration-form .input-rounded {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.registration-form p {
+    margin-top: 20px;
+}
+
+.registration-form a {
+    color: #3498db;
+    text-decoration: none;
+}
