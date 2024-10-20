@@ -1,4 +1,6 @@
-from flask import Flask
+from flask import Flask, request, render_template
+import requests
+from hashlib import sha256
 
 app = Flask(__name__)
 
@@ -10,17 +12,31 @@ Route for the home page.
 Returns:
     str: A greeting message 'Hello World'.
 """
-    return 'Hello World'
+    return render_template("home.html")
 
-@app.route('/register')
+@app.route('/registerpage')
+def registerpage() -> str:
+    """
+    Handles the registration process.
+    Returns:
+        str: A confirmation message indicating the registration status.
+    """
+    return render_template("registerpage.html")
+
+@app.route('/register', methods=['POST'])
 def register() -> str:
     """
     Handles the registration process.
     Returns:
         str: A confirmation message indicating the registration status.
     """
+    username = request.form['username']
+    password = request.form['password']
+    print(username)
+    print(password)
+    return f'Registered {username} {sha256(password.encode()).hexdigest()}'
 
-    return 'Register'
+    
 
 @app.route('/login')
 def login() -> str:

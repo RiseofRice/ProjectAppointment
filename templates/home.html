@@ -33,13 +33,21 @@
         <div class="container">
             <h2>Planer für DND</h2>
             <p>Einfache und schnelle Terminfindung <br>Keine Diskussionen mehr, weniger Stress für Alex. <br> Mehr DND</p>
-            <form action="/register">
+            
+            <form id="my-form-register">
                 <input type="submit" class="btn-primary" value="Los geht's">
             </form>
             
         </div>
     </section>
-
+    <script>
+        window.onload = function() {
+          var form = document.getElementById("my-form-register");
+          var currentURL = window.location.origin;
+          form.action = currentURL + "/registerpage";
+          console.log(form.action);
+        }
+    </script>
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
