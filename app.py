@@ -1,6 +1,8 @@
 from flask import Flask, request, render_template
 import requests
 from hashlib import sha256
+import databasemanager
+import os
 
 app = Flask(__name__)
 
@@ -34,6 +36,8 @@ def register() -> str:
     password = request.form['password']
     print(username)
     print(password)
+    databasemanager.insert_user(username, sha256(password.encode()).hexdigest())
+
     return f'Registered {username} {sha256(password.encode()).hexdigest()}'
 
     
@@ -43,4 +47,7 @@ def login() -> str:
     return 'Login'
 
 if __name__ == '__main__':
+    if not os.path.exists('database.sqlite'):
+        with open('database.db', 'w', encoding='utf-8') as f:
+            databasemanager.create_table()
     app.run(host="0.0.0.0", port=8080, debug=True)
